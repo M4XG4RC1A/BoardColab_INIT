@@ -1,0 +1,8 @@
+
+io.on('connection', newConnection);
+
+function newConnection(socket){
+    console.log(socket.id);
+}
+
+app.use(express.static('public'));
